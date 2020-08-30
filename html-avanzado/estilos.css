@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;;
+} /*Quito margenes que vienen x defecto*/
+
+header{
+    width: 100%; /*El ancho que ocupe un 100 % de nuestro navegador. Hago primero esto para centrar el contenido del header. Es decir, primero limito el ancho.*/
+    background: darkslategrey;
+    color: rgb(12, 197, 12);
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+header img{
+    width: 120px;
+    margin-left: 44%;/*ir probando hasta que la imagen quede en e centro*/
+    margin-top: 1%; /*para que se me separe el <h2>*/
+    border-radius: 100%; /*para que la imagen tenga contorno circular*/
+    
+}
+
+h1{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2em; /*para aumentar o disminuir el tamaño de las letras*/
+}
+h2{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em; 
+}
+
+section{
+    width: 70%;/*que el ancho de esta parte, 'section', ocupe sólo e 70 % de mi navegador*/
+    margin:0 auto ;/*en 2do lugar, configuro la posición. Cero en una determinada posición, y automático en los ... ¿?*/
+}
+
+article{/*Especifico de manera universal cada uno de los articles*/
+    padding: 20px 0 20px 0;
+    border-bottom: 1px dotted darkgray;/*línea puntedapara diferenciar mejor los articles*/
+}
+
+article h2{
+    float: left;
+    border-bottom: 2px solid  rgb(12, 197, 12); /*Para el subrayado de los subtítulos h2*/
+    padding-bottom: 5px;
+    line-height: 1.3em; /*Para las disancias que hay entre cada línea*/
+    font-size: 1em;
+    text-transform: uppercase;/*para que el texto se coloque en mayúsculas*/
+
+}
+
+article p{
+    margin-left: 20%;
+}
+
+article p, article ul{
+    margin-left: 40%; /*40% de mi navegador. Es para distaniarlo del h2, los subtítulos*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:  darkslategrey;
+    line-height: 1.3em;/*para las distancias que hay entre cada línea dentro párrafo*/
+    margin-bottom: 1.6em; /*distancia de la parte de abajo*/
+}
+
+article ul li{
+    margin-left: 15px;
+    list-style: square;/*cambia la forma de la viñeta*/
+}
+
+footer{
+    margin-top: 2em; /*'em' escala el texto*/
+    padding: 1em;
+    width: 100%; /*Se recomienda colocar el ancho en %*/
+    background: rgb(32, 46, 46);
+    color:  rgb(12, 197, 12);
+    text-align: center;
+}
+
+footer a:link, footer a:visited{ /*Uso lo de 'visited' para que cambie de color el link*/
+    color: greenyellow;
+
+}
+
+footer a:hover{
+    text-decoration: none;/*para que no aparezca la línea debajo del email cuando se apoya el puntero del mouse*/
+    color: honeydew; /*se coloca en ese color cuando se pasa el puntero*/
+}
